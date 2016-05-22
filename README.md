@@ -11,14 +11,17 @@ Edit gulpfile.js in your projects root
 
 ### Add the hello world sample from angular.io
 1. In the scripts folder: add main.ts
-``///<reference path="./../typings/browser/ambient/core-js/index.d.ts"/>
+
+```ts
+///<reference path="./../typings/browser/ambient/core-js/index.d.ts"/>
 import { bootstrap }    from '@angular/platform-browser-dynamic';
 import { AppComponent } from './app.component';
 bootstrap(AppComponent);
 ```
 
 2. In the scripts folder, add app.component.ts
-```import { Component } from '@angular/core';
+```ts
+import { Component } from '@angular/core';
 @Component({
     selector: 'my-app',
     template: '<h1>Hello World, this is Angular2</h1>'
@@ -28,7 +31,8 @@ export class AppComponent { }
 
 ### Edit Views\Shared\_Layout.cshtml
 Add this code from the Angular Quickstart tutorial to the head part. 
-```
+
+```html
 	<!-- 1. Load libraries -->
     <!-- Polyfill(s) for older browsers -->
     <script src="lib/core-js/client/shim.min.js"></script>
